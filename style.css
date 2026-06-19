@@ -1,0 +1,591 @@
+/* ============================================
+   BROTHERHOOD STREETWEAR - MAIN STYLESHEET
+   Colors: Black, White, Grey
+   Fonts: Montserrat (Headings), Arial Black (Body)
+   ============================================ */
+
+/* Import Google Fonts - Montserrat for headings */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
+
+/* ===== RESET & BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial Black', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+/* ===== HEADER STYLES ===== */
+header {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    color: white;
+    padding: 2rem 2rem 1.5rem 2rem;
+    text-align: center;
+    border-bottom: 4px solid #555555;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    word-spacing: 5px;
+}
+
+/* ===== NAVIGATION STYLES ===== */
+nav {
+    margin-top: 1.2rem;
+    background-color: #2a2a2a;
+    padding: 0.8rem;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+    margin: 0 0.3rem;
+    transition: all 0.3s ease;
+    border-radius: 30px;
+    letter-spacing: 0.5px;
+}
+
+nav a:hover {
+    background-color: #555555;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* ===== MAIN CONTENT AREA ===== */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+}
+
+main h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #000000;
+    padding: 1.5rem 0 0.5rem 0;
+    border-bottom: 3px solid #333333;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+main h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #2a2a2a;
+    margin: 1rem 0 0.5rem 0;
+}
+
+main p {
+    font-family: 'Arial Black', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    color: #333333;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+/* ===== IMAGE STYLES ===== */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    margin: 1rem 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+}
+
+img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* ===== PRODUCT GRID LAYOUT ===== */
+main img {
+    width: 100%;
+    max-width: 350px;
+    margin: 1rem auto;
+}
+
+main h3 {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+main p strong + p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555555;
+}
+
+/* Style for product price paragraphs */
+main p:contains("R") {
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Better product organization */
+main img + h3 {
+    margin-top: 0;
+}
+
+/* ===== BUTTON & LINK STYLES ===== */
+a[href="products.html"]:not(nav a) {
+    display: inline-block;
+    background-color: #000000;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    margin: 1rem 0;
+    transition: all 0.3s ease;
+    border: 2px solid #000000;
+}
+
+a[href="products.html"]:not(nav a):hover {
+    background-color: white;
+    color: #000000;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ===== FORM STYLES ===== */
+form {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin: 1.5rem 0;
+    border: 1px solid #e0e0e0;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #1a1a1a;
+    display: inline-block;
+    margin: 0.8rem 0 0.3rem 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.8rem;
+    font-family: 'Arial Black', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.95rem;
+    border: 2px solid #cccccc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #555555;
+    box-shadow: 0 0 8px rgba(85,85,85,0.3);
+}
+
+button[type="submit"] {
+    background-color: #000000;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+button[type="submit"]:hover {
+    background-color: #333333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* ===== CONTACT PAGE SPECIFIC ===== */
+main p strong {
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+/* ===== FOOTER STYLES ===== */
+footer {
+    background-color: #111111;
+    color: #999999;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    border-top: 1px solid #333333;
+}
+
+footer p {
+    color: #999999;
+    margin: 0.3rem 0;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+    
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 20px;
+    }
+    
+    nav a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+        margin: 0.2rem;
+    }
+    
+    main {
+        padding: 0 1rem;
+        margin: 1rem;
+    }
+    
+    main h2 {
+        font-size: 1.6rem;
+    }
+    
+    form {
+        padding: 1rem;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        max-width: 100%;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    main {
+        max-width: 95%;
+    }
+    
+    img {
+        max-width: 90%;
+        margin: 1rem auto;
+    }
+}
+
+/* ===== PRODUCT PAGE LAYOUT ENHANCEMENT ===== */
+/* This automatically organizes your products in a grid */
+main img {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Make products display in rows */
+main {
+    text-align: center;
+}
+
+main h2 {
+    text-align: left;
+}
+
+main img {
+    display: inline-block;
+    margin: 1rem;
+    width: calc(33% - 2rem);
+    min-width: 250px;
+}
+
+main h3,
+main p {
+    text-align: center;
+}
+
+/* Ensure proper spacing for product items */
+main img + h3 {
+    margin-top: 0;
+}
+
+/* Force product grid layout */
+@media (min-width: 768px) {
+    main img {
+        width: calc(33% - 2rem);
+    }
+}
+
+/* ===== SPECIAL HOVER EFFECTS ===== */
+header h1:hover {
+    letter-spacing: 5px;
+    transition: 0.3s ease;
+}
+
+/* ===== FORM HELPER CLASSES ===== */
+::placeholder {
+    font-family: 'Arial Black', 'Arial Narrow', Arial, sans-serif;
+    color: #bbbbbb;
+    opacity: 0.7;
+}
+
+/* ===== SIMPLE ANIMATIONS ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* ===== IMAGE ALTERNATIVE TEXT STYLE ===== */
+img[alt] {
+    font-style: italic;
+    color: #666666;
+}
+
+/* ===== CLEAR BROWSER DEFAULT STYLES ===== */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #333333, transparent);
+    margin: 1.5rem 0;
+}
+
+/* ============================================
+   PART 3 ADDITIONS — JS-DRIVEN VISUAL ENHANCEMENTS
+   ============================================ */
+
+/* Active nav link */
+nav a.active-link {
+    background-color: #ffffff;
+    color: #000000 !important;
+}
+
+/* Scroll progress bar */
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 0%;
+    background: linear-gradient(to right, #555555, #ffffff);
+    z-index: 9999;
+    transition: width 0.1s ease-out;
+}
+
+/* Shrinking header on scroll */
+header.shrink {
+    padding: 1rem 2rem;
+    transition: padding 0.3s ease;
+}
+header {
+    transition: padding 0.3s ease;
+}
+
+/* Back to top button */
+#back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #000000;
+    color: white;
+    border: 2px solid white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 999;
+}
+#back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+#back-to-top:hover {
+    background-color: #333333;
+    transform: translateY(-3px);
+}
+
+/* Scroll-reveal animation */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal-on-scroll.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Lightbox overlay */
+#lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.92);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 10000;
+}
+#lightbox-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+#lightbox-img {
+    max-width: 85%;
+    max-height: 75vh;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+#lightbox-caption {
+    color: white;
+    margin-top: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+}
+#lightbox-close {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+/* Product search bar */
+#product-search-wrap {
+    margin: 0.5rem 0 1.5rem 0;
+    text-align: left;
+}
+#product-search {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.7rem 1rem;
+    border: 2px solid #cccccc;
+    border-radius: 30px;
+    font-family: 'Arial Black', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+#product-search:focus {
+    outline: none;
+    border-color: #555555;
+    box-shadow: 0 0 8px rgba(85,85,85,0.3);
+}
+
+/* Product card wrapper (created by JS for filtering) */
+.product-card {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(33% - 2rem);
+    min-width: 250px;
+    margin: 1rem;
+    transition: opacity 0.3s ease;
+}
+
+/* Form validation error styling */
+.input-error {
+    border-color: #cc0000 !important;
+    box-shadow: 0 0 8px rgba(204,0,0,0.3) !important;
+}
+.error-message {
+    display: block;
+    color: #cc0000;
+    font-size: 0.85rem;
+    margin: 0.3rem 0 0.5rem 0;
+    font-family: 'Arial Black', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Form success message */
+.form-success-message {
+    display: none;
+    background-color: #e6f7e9;
+    color: #1a7a32;
+    border: 1px solid #1a7a32;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.form-success-message.show {
+    display: block;
+    animation: fadeIn 0.4s ease-out;
+}
+
+/* Leaflet store locator map */
+#store-map {
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 1;
+}
+
+/* Fix Leaflet popup font to match brand */
+.leaflet-popup-content {
+    font-family: 'Arial Black', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.9rem;
+}
