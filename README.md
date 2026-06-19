@@ -147,4 +147,4 @@ Live sitemap: 🔗 https://brotherhoodstreetwear.netlify.app/sitemap.xml
 🔗 https://brotherhoodstreetwear.netlify.app
 
 # GitHub Repository
-🔗 https://github.com/yourname/your-repo-name
+🔗 https://github.com/duraamarachi-max/WEDE5020-PART-3-Brotherhood-Streetwear.git
